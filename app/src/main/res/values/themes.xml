@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyApplication" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">#090E17</item>
+    </style>
+
+    <!-- Unified Pro Splash Screen Theme for Android 7+ through Android 17+ -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Deep Obsidian Brand Background -->
+        <item name="windowSplashScreenBackground">#090E17</item>
+        <!-- Custom Launcher Logo Icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">250</item>
+        <!-- Immediate Handover Theme -->
+        <item name="postSplashScreenTheme">@style/Theme.MyApplication</item>
+    </style>
+</resources>
